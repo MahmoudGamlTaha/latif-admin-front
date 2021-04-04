@@ -6,5 +6,6 @@
 export const environment = {
   production: false,
   baseUrl :'https://latifapp.herokuapp.com/api/',
-  swaggerUrl:'https://latifapp.herokuapp.com/swagger-ui.html'
+  swaggerUrl:'https://latifapp.herokuapp.com/swagger-ui.html',
+  githubUrl:'https://github.com/MahmoudGamlTaha/latif-admin-front',
 };

@@ -25,6 +25,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 // import { ManageBlogComponent } from './pages/blog-list/manage-blog/manage-blog.component';
 import { UsersComponent } from './pages/users/users.component';
 import { SharedModule } from './shared/shared.module'; 
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -34,6 +35,7 @@ import { SharedModule } from './shared/shared.module';
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    TranslateModule.forRoot(),
     // SharedModule,
     // AgmCoreModule.forRoot({
     //   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'

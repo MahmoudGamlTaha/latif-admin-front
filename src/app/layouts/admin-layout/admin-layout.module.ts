@@ -22,11 +22,13 @@ import { ManageBlogComponent } from 'app/pages/blog-list/manage-blog/manage-blog
 import { BlogListComponent } from 'app/pages/blog-list/blog-list.component';
 import { BlogCategoryListComponent } from 'app/pages/blog-category-list/blog-category-list.component';
 import { ManageBlogCategoryComponent } from 'app/pages/blog-category-list/manage-blog-category/manage-blog-category.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
+    TranslateModule.forChild(),
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
