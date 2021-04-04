@@ -1,0 +1,25 @@
+<ng-container *ngIf="tableData.value ">
+    <table class="table">
+        <thead class="text-danger">
+            <th *ngFor="let head of tableHeaders">{{head}}</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of tableData.value">
+                <td *ngFor="let td of table_cell_data">
+                    <ng-container *ngIf="td != 'image'">
+                        {{row[td] ? row[td] : null}}
+                    </ng-container>
+                    <ng-container *ngIf="td == 'image'">
+                        <img class="img-fluid"
+                            src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg">
+                        <!-- <img [src]="row[td] ? row[td] : 'https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg'" alt=""> -->
+                        <!-- {{row[td] ? row[td] : null}} -->
+                    </ng-container>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</ng-container>
+<ng-container *ngIf="!tableData.value">
+    <h4 class="text-center">لاتوجد بيانات</h4>
+</ng-container>
